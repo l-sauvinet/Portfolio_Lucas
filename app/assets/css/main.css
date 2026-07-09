@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__nuxt {
+  height: 100%;
+}
+
+body {
+  @apply bg-ink-950 text-slate-300 font-sans antialiased;
+  overscroll-behavior: none;
+}
+
+::selection {
+  background: rgba(0, 201, 140, 0.35);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 999px;
+}
+
+.text-accent {
+  color: #00c98c;
+}
+
+.panel {
+  @apply rounded-2xl border border-white/[0.07] bg-white/[0.025];
+}
+
+.panel-hover {
+  @apply transition-colors duration-300 hover:border-accent/30 hover:bg-white/[0.04];
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .tilt-glare {
+    background: radial-gradient(220px circle at var(--gx, 50%) var(--gy, 50%), rgba(0, 201, 140, 0.16), transparent 70%);
+  }
+}

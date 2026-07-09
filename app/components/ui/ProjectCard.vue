@@ -62,6 +62,13 @@ function onLeave() {
         <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-amber-300" />
         En dev
       </span>
+      <span
+        v-else-if="project.demo"
+        class="flex shrink-0 items-center gap-1.5 rounded-full border border-accent/30 px-2.5 py-1 text-[10px] uppercase tracking-wide text-accent"
+      >
+        <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
+        En ligne
+      </span>
     </div>
 
     <p class="relative mt-3 line-clamp-2 text-sm leading-relaxed text-slate-400">
@@ -99,7 +106,7 @@ function onLeave() {
         @click.stop
       >
         <Icon name="lucide:external-link" class="h-4 w-4" />
-        Démo
+        Voir le site
       </a>
       <span
         v-if="!project.github && !project.demo"

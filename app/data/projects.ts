@@ -29,16 +29,16 @@ export const projects: Project[] = [
     stack: ['Vue.js', 'Firebase'],
     status: 'shipped',
     github: null,
-    demo: null,
+    demo: 'https://obsidkey.sauv-web.fr',
   },
   {
     slug: 'axiora',
     name: 'Axiora',
     tagline: "Gestion centralisée pour indépendants & petites structures",
     description:
-      "Application web de gestion centralisant les activités essentielles d'un professionnel ou d'une petite structure : clients, rendez-vous et suivi de trésorerie, réunis dans une interface unique, claire et moderne.",
+      "Application web de gestion centralisant les activités essentielles d'un professionnel ou d'une petite structure : clients, rendez-vous et suivi de trésorerie, réunis dans une interface unique, claire et moderne. Encore en développement.",
     longDescription:
-      "Axiora est une application web de gestion pensée pour les indépendants et petites structures qui jonglent entre plusieurs outils au quotidien. Elle centralise la gestion des clients, l'organisation des rendez-vous et le suivi de la trésorerie dans une seule interface, claire et moderne, pour éviter d'avoir à multiplier les tableurs et applications séparées.",
+      "Axiora est une application web de gestion pensée pour les indépendants et petites structures qui jonglent entre plusieurs outils au quotidien. Elle centralise la gestion des clients, l'organisation des rendez-vous et le suivi de la trésorerie dans une seule interface, claire et moderne, pour éviter d'avoir à multiplier les tableurs et applications séparées. Le projet est encore en développement actif.",
     features: [
       'Fiches clients centralisées avec historique',
       'Agenda et gestion des rendez-vous intégrés',
@@ -46,7 +46,7 @@ export const projects: Project[] = [
       'Interface pensée pour un usage quotidien rapide',
     ],
     stack: ['Vue.js', 'Firebase'],
-    status: 'shipped',
+    status: 'in-progress',
     github: null,
     demo: null,
   },

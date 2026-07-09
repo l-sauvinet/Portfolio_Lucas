@@ -38,9 +38,9 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Portfolio de Lucas Sauvinet, développeur fullstack — Vue.js, Firebase, Python. BTS SIO, actuellement en Licence Professionnelle Développement.',
+            'Portfolio de Lucas Sauvinet, développeur fullstack — Vue.js, Firebase, PHP/Symfony. Actuellement chez Thomyris.',
         },
-        { name: 'theme-color', content: '#0a0a12' },
+        { name: 'theme-color', content: '#050505' },
       ],
       link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     },

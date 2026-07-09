@@ -31,6 +31,13 @@ const project = computed(() => projects.find((p) => p.slug === props.slug))
         <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-amber-300" />
         En développement
       </span>
+      <span
+        v-else-if="project.demo"
+        class="flex shrink-0 items-center gap-1.5 rounded-full border border-accent/30 px-2.5 py-1 text-[10px] uppercase tracking-wide text-accent"
+      >
+        <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
+        En ligne
+      </span>
     </div>
 
     <div class="panel relative mb-8 flex h-56 items-center justify-center overflow-hidden sm:h-72">
@@ -77,7 +84,7 @@ const project = computed(() => projects.find((p) => p.slug === props.slug))
         class="inline-flex items-center gap-1.5 text-sm text-slate-300 transition-colors hover:text-slate-100"
       >
         <Icon name="lucide:external-link" class="h-4 w-4" />
-        Démo
+        Voir le site
       </a>
       <span v-if="!project.github && !project.demo" class="inline-flex items-center gap-1.5 text-sm text-slate-600">
         <Icon name="lucide:lock" class="h-4 w-4" />

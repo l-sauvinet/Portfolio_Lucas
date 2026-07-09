@@ -8,7 +8,7 @@ const { openFile } = useIde()
   <div class="mx-auto max-w-5xl">
     <PaneHeader path="~/projects/" comment="// Ce que j'ai construit — cliquez une carte pour le détail" />
 
-    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-5">
       <ProjectCard
         v-for="(project, i) in projects"
         :key="project.slug"
